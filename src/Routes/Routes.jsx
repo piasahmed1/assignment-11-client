@@ -9,13 +9,15 @@ import AddaJobs from "../Pages/Home/Add A Jobs/AddaJobs";
 import MyJobs from "../Pages/Home/My Jobs/MyJobs";
 import Blogs from "../Pages/Blogs/Blogs";
 import UserProfile from "../Pages/Home/User Profile/UserProfile";
-import TabPanel from "../Components/Tab/Tabs";
+import ErrorPage from "./ErrorPage";
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -52,11 +54,8 @@ const router = createBrowserRouter([
       {
         path: 'userProfile',
         element: <UserProfile></UserProfile>
-      },
-      {
-        path: 'tab',
-        element: <TabPanel></TabPanel>
       }
+
 
     ],
   },

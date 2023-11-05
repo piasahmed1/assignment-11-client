@@ -49,7 +49,7 @@ const Catagores = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-4 gap-4 my-10'>
+      <div className=''>
         {selectedCategory === 'parttime Jobs' && <PartTime></PartTime> }
         {selectedCategory === 'Remote Job' && <RemoteJob></RemoteJob>}
         {selectedCategory === 'Hybrid Job' && <Hybrid></Hybrid>}

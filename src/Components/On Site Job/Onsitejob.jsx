@@ -1,16 +1,24 @@
+import { useEffect, useState } from "react";
+import OnSitesDetails from "./OnSitesDetails";
 
 const Onsitejob = () => {
+  const [remote, setremote] = useState([]);
+  useEffect(()=>{
+    fetch('http://localhost:5000/remote')
+    .then(res=>res.json())
+    .then(data=>setremote(data))
+},[])
+
+
+
+
   return (
-    <div>
-      <div className='border p-4 rounded-2xl'>
-                <p>Name:</p>
-                <p>Hybrid devoloper</p>
-                <p>Posting data</p>
-                <p>application Deadline</p>
-                <p>salary range:</p>
-                <p>Job application Number:</p>
-                <button className='btn btn-ghost'>View Details</button>
-            </div>
+
+
+    <div className="grid grid-cols-3 gap-4">
+      {
+        remote.map((remote) => <OnSitesDetails key={remote._id} jobs={remote}></OnSitesDetails>)
+      }
     </div>
   );
 };
