@@ -9,7 +9,6 @@ import { useState } from "react";
 
 const Catagores = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
-// const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleCategoryClick = (categoryName) => {
     setSelectedCategory(categoryName);

@@ -9,9 +9,6 @@ const Onsitejob = () => {
     .then(data=>setremote(data))
 },[])
 
-
-
-
   return (
 
 

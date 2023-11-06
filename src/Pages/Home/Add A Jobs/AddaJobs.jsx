@@ -41,25 +41,25 @@ const AddaJobs = () => {
 
   return (
     <div className="bg-[#F4F3F0]  p-24">
-      <h2 className="text-3xl font-extrabold">Add a Product</h2>
+      <h2 className="text-5xl font-extrabold text-center font-bold mb-8">Add a Jobs</h2>
       <form onSubmit={handleProducts}>
         {/* form row */}
 
         <div className="md:flex mb-8">
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Name</span>
+              <span className="label-text">Job Title</span>
             </label>
             <label className="input-group">
-              <input type="text" name="name" placeholder="Name" className="input input-bordered w-full" />
+              <input type="text" name="name" placeholder="Job Title" className="input input-bordered w-full" />
             </label>
           </div>
           <div className="form-control md:w-1/2 ml-4">
             <label className="label">
-              <span className="label-text">Brand Name</span>
+              <span className="label-text">Job Category</span>
             </label>
             <label className="input-group">
-              <input type="text" name="brand" placeholder="Brand Name" className="input input-bordered w-full" />
+              <input type="category" name="brand" placeholder="Job Category" className="input input-bordered w-full" />
             </label>
           </div>
         </div>
@@ -68,18 +68,18 @@ const AddaJobs = () => {
         <div className="md:flex mb-8">
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Price</span>
+              <span className="label-text">Picture Url</span>
             </label>
             <label className="input-group">
-              <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
+              <input type="text" name="price" placeholder="Picture Url" className="input input-bordered w-full" />
             </label>
           </div>
           <div className="form-control md:w-1/2 ml-4">
             <label className="label">
-              <span className="label-text">Short description</span>
+              <span className="label-text">Salary Range</span>
             </label>
             <label className="input-group">
-              <input type="text" name="description" placeholder="Short description" className="input input-bordered w-full" />
+              <input type="text" name="description" placeholder="Salary Range" className="input input-bordered w-full" />
             </label>
           </div>
         </div>
@@ -88,30 +88,38 @@ const AddaJobs = () => {
         <div className="md:flex mb-8">
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Rating</span>
+              <span className="label-text">Job Description</span>
             </label>
             <label className="input-group">
-              <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" />
+              <input type="text" name="rating" placeholder="Job Description" className="input input-bordered w-full" />
             </label>
           </div>
           <div className="form-control md:w-1/2 ml-4">
             <label className="label">
-              <span className="label-text">Category</span>
+              <span className="label-text">Job Posting Date</span>
             </label>
             <label className="input-group">
-              <input type="text" name="category" placeholder="category" className="input input-bordered w-full" />
+              <input type="text" name="category" placeholder="Job Posting Date" className="input input-bordered w-full" />
             </label>
           </div>
         </div>
         {/* form catagory and details */}
 
-        <div className="">
-          <div className="form-control w-full">
+        <div className="md:flex mb-8">
+          <div className="form-control md:w-1/2 ml-4 ">
             <label className="label">
-              <span className="label-text">Photo URL</span>
+              <span className="label-text">Application Deadline</span>
             </label>
             <label className="input-group">
-              <input type="text" name="url" placeholder="Photo URL" className="input input-bordered w-full" />
+              <input type="date" name="url" placeholder="Application Deadline" className="input input-bordered w-full" />
+            </label>
+          </div>
+          <div className="form-control md:w-1/2 ml-4">
+            <label className="label">
+              <span className="label-text">Job Applicants Number</span>
+            </label>
+            <label className="input-group">
+              <input type="number" name="url" placeholder="Job Applicants Number" className="input input-bordered w-full" />
             </label>
           </div>
         </div>
