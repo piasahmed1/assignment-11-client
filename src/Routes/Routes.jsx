@@ -10,6 +10,7 @@ import MyJobs from "../Pages/Home/My Jobs/MyJobs";
 import Blogs from "../Pages/Blogs/Blogs";
 import UserProfile from "../Pages/Home/User Profile/UserProfile";
 import ErrorPage from "./ErrorPage";
+import Slider from "../Pages/Slider/Slider";
 
 
 
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: 'userProfile',
         element: <UserProfile></UserProfile>
+      },
+      {
+        path: 'slider',
+        element: <Slider></Slider>
       }
 
 
