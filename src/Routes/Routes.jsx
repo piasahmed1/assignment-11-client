@@ -8,7 +8,6 @@ import AppliedJobs from "../Pages/Home/Applied Jobs/AppliedJobs";
 import AddaJobs from "../Pages/Home/Add A Jobs/AddaJobs";
 import MyJobs from "../Pages/Home/My Jobs/MyJobs";
 import Blogs from "../Pages/Blogs/Blogs";
-import UserProfile from "../Pages/Home/User Profile/UserProfile";
 import ErrorPage from "./ErrorPage";
 import Slider from "../Pages/Slider/Slider";
 
@@ -51,10 +50,6 @@ const router = createBrowserRouter([
       {
         path: 'blogs',
         element: <Blogs></Blogs>
-      },
-      {
-        path: 'userProfile',
-        element: <UserProfile></UserProfile>
       },
       {
         path: 'slider',

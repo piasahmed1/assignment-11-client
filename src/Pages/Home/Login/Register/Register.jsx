@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../../providers/AuthProvider";
+import Footer from "../../Footer/Footer";
 
 const Register = () => {
 
@@ -26,6 +27,7 @@ const Register = () => {
   }
 
   return (
+<div>
 <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col ">
     <div className="text-center ">
@@ -65,6 +67,10 @@ const Register = () => {
       </div>
     </div>
   </div>
+</div>
+
+
+<Footer></Footer>
 </div>
   );
 };

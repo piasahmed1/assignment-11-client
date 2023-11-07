@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 
 const AddaJobs = () => {
   const handleProducts = event => {
@@ -40,7 +41,9 @@ const AddaJobs = () => {
   }
 
   return (
-    <div className="bg-[#F4F3F0]  p-24">
+<div>
+
+<div className="bg-[#F4F3F0]  p-24">
       <h2 className="text-5xl font-extrabold text-center font-bold mb-8">Add a Jobs</h2>
       <form onSubmit={handleProducts}>
         {/* form row */}
@@ -128,6 +131,12 @@ const AddaJobs = () => {
 
       </form>
     </div>
+
+
+
+
+    <Footer></Footer>
+</div>
   );
 };
 

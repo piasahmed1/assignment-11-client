@@ -14,15 +14,23 @@ const Routes2 = ({ site }) => {
     <div>
       <div className="card w-96 bg-base-100 shadow-xl items-center">
         <div className="card-body">
-          <p className="card-title">Name:{name} </p>
-          <p>job title: {jobTitle}</p>
-          <p>Job Posting Date:{jobPostingDate} </p>
-          <p>Job Categories:{jobCategories} </p>
-          <p>application Deadline:{applicationDeadline} </p>
-          <p>Salary Range:{salaryRange} </p>
-          <p>Job Applicants Number:{jobApplicantsNumber} </p>
+          <p className="card-title text-3xl">Name: {name} </p>
+          <br />
+          <p className="text-xl">Job Title: {jobTitle}</p>
+          <br />
+          <p className="text-xl">Job Posting Date: {jobPostingDate} </p>
+          <br />
+          <p className="text-2xl">Job Categories: {jobCategories} </p>
+          <br />
+          <p className="text-xl">Application Deadline: {applicationDeadline} </p>
+          <br />
+          <p className="text-xl">Salary Range: {salaryRange} </p>
+          <br />
+          <p className="text-xl">Job Applicants Number: {jobApplicantsNumber} </p>
+          <br />
           <p>Id:{_id} </p>
-          <div className="card-actions justify-center gap-5">
+          <br /> 
+          <div className="card-actions justify-center">
             <button className="btn btn-primary ">View Details</button>
           </div>
         </div>

@@ -1,7 +1,11 @@
+import Footer from "../Home/Footer/Footer";
 
 const Blogs = () => {
   return (
-    <div className="mb-5 gap-5 p-10">
+    <div>
+
+
+<div className="mb-5 gap-5 p-10">
     <div className="bg-base-200">
  
   <div className=" mb-5 text-3xl text-center text-green-500 font-medium">
@@ -25,19 +29,25 @@ Storing tokens securely on the client-side is crucial. Options include in-memory
   <div> 
     <p className="text-xl">Express.js is a popular web application framework for Node.js, designed to simplify and streamline web application and API development. It offers a minimalist and flexible approach to building robust web applications, providing features like routing, middleware support, and HTTP method management. With its active open-source community, Express.js allows developers to create efficient and scalable applications. its not highly extensible, with a wealth of available middleware modules and extensions. This versatility, along with its performance and ease of use, has made Express.js a top choice for developing web applications and RESTful APIs in the Node.js ecosystem.</p>
     <br />
-    <h2 className="font-bold text-xl gap-5 text-red-500">What is Nest JS</h2>
+    <h2 className="font-bold text-xl gap-5 text-red-500">What is Nest JS?</h2>
     <p className="text-xl">NestJS is an open-source web application framework for building server-side applications with TypeScript or JavaScript. Inspired by Angular and Express.js, it offers a structured, modular approach to development with features like dependency injection, HTTP and WebSocket support. NestJS promotes maintainable, scalable applications and integrates well with databases and various technologies. Its focus on SOLID principles and Domain-Driven Design makes it a preferred choice for building robust server-side applications in the Node.js ecosystem.</p>
   </div>
 </div>
 <div className="bg-base-200 mb-5 gap-5">
   
   <div className="mb-5 p-4 text-3xl text-center text-green-500 font-medium">
-    Explain My Full Projects Code
+    Explain My Full Projects Code!
   </div>
   <div className="mb-5"> 
     <p className="text-xl">A job-related website built with React.js relies on various components and functionalities to deliver a user-friendly experience. React components, dynamic by nature, form the sites interface, encompassing features like job listings, search filters, and user profiles. The code leverages state management for real-time data updates and employs API calls to fetch job listings from remote sources. Routing ensures seamless navigation, while CSS or CSS-in-JS solutions handle styling. Authentication, database integration, and responsive design are integral. Search and filtering options enhance job discovery, and user interactions like job applications and saved listings are managed. Error handling, input validation, and performance optimizations are key considerations, along with SEO and deployment for hosting. In essence, React.js empowers the creation of robust, interactive job-related websites.</p>
   </div>
 </div>
+    </div>
+
+
+
+
+    <Footer></Footer>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Routes2 from "../../../Components/Routes2";
+import Footer from "../Footer/Footer";
 
 const AllJobs = () => {
   const [alljobs, setalljobs] = useState([]);
@@ -15,7 +16,11 @@ const AllJobs = () => {
     job.jobCategories.toLowerCase().includes(searchInput.toLowerCase())
   );
   return (
-    <div className="container mx-auto">
+<div>
+
+
+
+<div className="container mx-auto">
       <div className="flex  justify-center items-center my-10">
         <input
           type="search"
@@ -25,7 +30,7 @@ const AllJobs = () => {
           onChange={(e) => setSearchInput(e.target.value)}
         />
       </div>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-16">
         {
   filteredonsite.map((jobs2)=><Routes2 key={jobs2._id} site={jobs2}></Routes2>)
 
@@ -33,6 +38,10 @@ const AllJobs = () => {
         
       </div>
     </div>
+
+    <Footer></Footer>
+</div>
+    
   );
 };
 
