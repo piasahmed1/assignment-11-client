@@ -22,6 +22,8 @@ Storing tokens securely on the client-side is crucial. Options include in-memory
   </div>
 </div>
 <div className="bg-base-200">
+
+  
   
   <div className=" mb-5 text-3xl text-center text-green-500 font-medium">
   What is express js?
@@ -31,7 +33,7 @@ Storing tokens securely on the client-side is crucial. Options include in-memory
     <br />
     <h2 className="font-bold text-xl gap-5 text-red-500">What is Nest JS?</h2>
     <p className="text-xl">NestJS is an open-source web application framework for building server-side applications with TypeScript or JavaScript. Inspired by Angular and Express.js, it offers a structured, modular approach to development with features like dependency injection, HTTP and WebSocket support. NestJS promotes maintainable, scalable applications and integrates well with databases and various technologies. Its focus on SOLID principles and Domain-Driven Design makes it a preferred choice for building robust server-side applications in the Node.js ecosystem.</p>
-    
+
   </div>
 </div>
 <div className="bg-base-200 mb-5 gap-5">
