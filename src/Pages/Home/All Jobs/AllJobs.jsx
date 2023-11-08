@@ -19,6 +19,7 @@ const AllJobs = () => {
 <div>
 
 
+
 <div className="container mx-auto">
       <div className="flex  justify-center items-center my-10">
         <input
