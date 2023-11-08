@@ -4,5 +4,5 @@
 ## protected items with login credentials
 ## Firebase Authentication with Email and Password
 ## Firebase Authentication by Google
-## user can see our all jobs section
+## user can see our all job section
 ## using here dynamic route and also meaningful 404 page
