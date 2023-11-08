@@ -13,7 +13,7 @@ const AllJobs = () => {
   }, []);
 
   const filteredonsite = alljobs.filter((job) =>
-    job.jobCategories.toLowerCase().includes(searchInput.toLowerCase())
+    job.jobTitle.toLowerCase().includes(searchInput.toLowerCase())
   );
   return (
 <div>

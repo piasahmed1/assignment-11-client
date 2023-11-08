@@ -1,5 +1,6 @@
 # React + Vite
 
+## This Project uses Tailwind css Daisyui react tabs
 ## protected items with login credentials
 ## Firebase Authentication with Email and Password
 ## Firebase Authentication by Google
