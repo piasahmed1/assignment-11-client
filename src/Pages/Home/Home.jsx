@@ -14,8 +14,7 @@ const Home = () => {
   const authInfo = useContext(AuthContext);
   console.log(authInfo)
   return (
-    <div>
-      
+    <div>  
       <Banner1></Banner1>
       <TabBase></TabBase>
       <Slider></Slider>
