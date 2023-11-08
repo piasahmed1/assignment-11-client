@@ -9,6 +9,7 @@ import TabBase from "../../Components/Catagores/TabBase";
 // import TabBase from "../../Components/TabBase";
 
 
+
 const Home = () => {
   const authInfo = useContext(AuthContext);
   console.log(authInfo)
