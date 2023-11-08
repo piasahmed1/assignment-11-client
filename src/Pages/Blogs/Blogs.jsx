@@ -34,7 +34,7 @@ Storing tokens securely on the client-side is crucial. Options include in-memory
   </div>
 </div>
 <div className="bg-base-200 mb-5 gap-5">
-  
+
   
   <div className="mb-5 p-4 text-3xl text-center text-green-500 font-medium">
     Explain My Full Projects Code!
@@ -44,9 +44,6 @@ Storing tokens securely on the client-side is crucial. Options include in-memory
   </div>
 </div>
     </div>
-
-
-
 
     <Footer></Footer>
     </div>
