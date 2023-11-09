@@ -4,7 +4,7 @@ import PartTimeJobDetails from "./PartTimeJobDetails";
 const PartTime = () => {
   const [remote, setremote] = useState([]);
   useEffect(()=>{
-    fetch('http://localhost:5000/remote')
+    fetch('https://assignment-11-server-dun-two.vercel.app/remote')
     .then(res=>res.json())
     .then(data=>setremote(data))
 },[])

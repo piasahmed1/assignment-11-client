@@ -12,6 +12,7 @@ import Slider from "../Pages/Slider/Slider";
 import Details from "../Components/Details";
 import AddJobs from "../Pages/Home/Add A Jobs/AddJobs";
 import ViewDetails from "./ViewDetails";
+import PrivetRoute from "../Route/PrivetRoute";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader : () => fetch('http://localhost:5000/addproducts'),
+        loader : () => fetch('https://assignment-11-server-dun-two.vercel.app/addproducts'),
       },
       {
         path: "/login",
@@ -38,16 +39,16 @@ const router = createBrowserRouter([
       },
       {
         path: "/appliedJobs",
-        element: <AppliedJobs></AppliedJobs>,
+        element: <PrivetRoute><AppliedJobs></AppliedJobs></PrivetRoute>,
       },
       {
         path: "addjobs",
-        element: <AddJobs></AddJobs>,
+        element: <PrivetRoute><AddJobs></AddJobs></PrivetRoute>,
       },
       {
         path: "/myJobs",
-        element: <MyJobs></MyJobs>,
-        loader : () => fetch('http://localhost:5000/addproducts'),
+        element: <PrivetRoute><MyJobs></MyJobs></PrivetRoute>,
+        loader : () => fetch('https://assignment-11-server-dun-two.vercel.app/addproducts'),
 
       },
       {
@@ -59,15 +60,15 @@ const router = createBrowserRouter([
         element: <Slider></Slider>,
       },
       {
-        path: "details",
+        path: "/detailss",
         element: <Details></Details>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/jobs/${params.id}`),
+          fetch(`https://assignment-11-server-dun-two.vercel.app/jobs/${params.id}`),
       },
       {
         path: '/details/:id',
-        element: <ViewDetails></ViewDetails>,
-        loader: ({ params }) => fetch(`http://localhost:5000/addproducts/${params.id}`),
+        element: <PrivetRoute><ViewDetails></ViewDetails></PrivetRoute>,
+        loader: ({ params }) => fetch(`https://assignment-11-server-dun-two.vercel.app/addproducts/${params.id}`),
       }
     ],
   },

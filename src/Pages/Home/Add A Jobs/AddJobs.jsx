@@ -1,6 +1,7 @@
 import { useContext } from "react";
 // import toast from "react-hot-toast";
 import { AuthContext } from "../../../providers/AuthProvider";
+import Footer from "../Footer/Footer";
 
 
 const AddJobs = () => {
@@ -35,7 +36,7 @@ const AddJobs = () => {
 
     console.log(products);
 
-    fetch("http://localhost:5000/addproducts", {
+    fetch("https://assignment-11-server-dun-two.vercel.app/addproducts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +53,8 @@ const AddJobs = () => {
   };
 
   return (
-    <div>
+<div>
+<div>
       <div className="">
         <div className=" py-10 bg-gray-700">
           <h1 className="text-white font-bold  text-5xl mt-10 text-center">
@@ -204,7 +206,7 @@ const AddJobs = () => {
             </div>
             <div className="flex justify-center">
               <input
-                className="btn bg-purple-600 w-3/4 border-none text-white hover:bg-blue-600"
+                className="btn bg-green-500 w-3/4 border-none text-white hover:bg-blue-600"
                 type="submit"
                 value="ADD JOBS"
               />
@@ -213,6 +215,11 @@ const AddJobs = () => {
         </div>
       </div>
     </div>
+
+
+
+    <Footer></Footer>
+</div>
   );
 };
 

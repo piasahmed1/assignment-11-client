@@ -7,7 +7,7 @@ const AllJobs = () => {
   const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/jobs")
+    fetch("https://assignment-11-server-dun-two.vercel.app/jobs")
       .then((res) => res.json())
       .then((data) => setalljobs(data));
   }, []);

@@ -22,18 +22,14 @@ const Routes2 = ({ site }) => {
           <br />
           <p className="text-xl">Job Posting Date: {jobPostingDate} </p>
           <br />
-          <p className="text-2xl">Job Categories: {jobCategories} </p>
-          <br />
           <p className="text-xl">Application Deadline: {applicationDeadline} </p>
           <br />
           <p className="text-xl">Salary Range: {salaryRange} </p>
           <br />
-          <p className="text-xl">Job Applicants Number: {jobApplicantsNumber} </p>
-          <br />
           <p>Id:{_id} </p>
           <br /> 
           <div className="card-actions justify-center">
-            <Link to={`details/${_id}`}><button className="btn btn-primary ">View Details</button></Link>
+            <Link to={`detailss/${_id}`}><button className="btn btn-primary ">View Details</button></Link>
           </div>
         </div>
       </div>
