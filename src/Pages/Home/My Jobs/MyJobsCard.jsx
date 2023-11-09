@@ -55,7 +55,7 @@ const handledelete = (_id) => {
   console.log(MyJobsCard);
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-90 h-[600px] bg-white border-2 border-black">
         <div className="card-body">
           <h2 className="font-bold text-xl">Applicants Number: {Job_Applicants_Number}</h2>
           <p className="font-bold">Job Title: {Job_Title} </p>

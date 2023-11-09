@@ -13,6 +13,8 @@ import Details from "../Components/Details";
 import AddJobs from "../Pages/Home/Add A Jobs/AddJobs";
 import ViewDetails from "./ViewDetails";
 import PrivetRoute from "../Route/PrivetRoute";
+import Vdetails from "../Pages/Home/All Jobs/Vdetails";
+
 
 const router = createBrowserRouter([
   {
@@ -60,8 +62,14 @@ const router = createBrowserRouter([
         element: <Slider></Slider>,
       },
       {
-        path: "/detailss",
+        path: "/details",
         element: <Details></Details>,
+        loader: ({ params }) =>
+          fetch(`https://assignment-11-server-dun-two.vercel.app/jobs/${params.id}`),
+      },
+      {
+        path: "/vdetails",
+        element: <Vdetails></Vdetails>,
         loader: ({ params }) =>
           fetch(`https://assignment-11-server-dun-two.vercel.app/jobs/${params.id}`),
       },

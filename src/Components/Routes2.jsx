@@ -14,7 +14,7 @@ const Routes2 = ({ site }) => {
 
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl items-center">
+      <div className="card w-96 h-[600px] bg-base-100 shadow-xl items-center">
         <div className="card-body">
           <p className="card-title text-3xl">Name: {name} </p>
           <br />
@@ -29,7 +29,7 @@ const Routes2 = ({ site }) => {
           <p>Id:{_id} </p>
           <br /> 
           <div className="card-actions justify-center">
-            <Link to={`detailss/${_id}`}><button className="btn btn-primary ">View Details</button></Link>
+            <Link to={`vdetails/${_id}`}><button className="btn btn-primary ">View Details</button></Link>
           </div>
         </div>
       </div>
